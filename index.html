@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteio - VIC Distribuidora</title>
-    <link rel="stylesheet" href="/assets/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="container">
         <div class="logo-container">
-            <img src="/assets/logo.png" alt="VIC Distribuidora" class="logo">
+            <img src="img/logo.png" alt="VIC Distribuidora" class="logo">
         </div>
         
         <div class="painel-controle">
-            <!-- Participantes (só aparece antes do primeiro sorteio) -->
             <div class="secao participantes" id="secaoParticipantes">
                 <div class="secao-header">
                     <h2>👥 Participantes</h2>
@@ -24,7 +23,6 @@
                 </div>
             </div>
 
-            <!-- Sorteio -->
             <div class="secao sorteio">
                 <div class="sorteio-displays">
                     <div class="display-item">
@@ -49,7 +47,6 @@
             </div>
         </div>
 
-        <!-- Botão Reiniciar (aparece no final) -->
         <div class="reiniciar-container" id="reiniciarContainer" style="display: none;">
             <button id="reiniciarBtn" class="btn-reiniciar">↻ Reiniciar Sorteio</button>
         </div>
@@ -57,7 +54,6 @@
         <div class="resultado" id="resultado"></div>
     </div>
 
-    <!-- Modal Gerenciar Participantes -->
     <div id="participantesModal" class="modal">
         <div class="modal-content pequeno">
             <div class="modal-header">
@@ -71,13 +67,11 @@
                     <button class="filtro-btn" data-filtro="ausentes">Ausentes</button>
                 </div>
                 <div class="lista-participantes" id="listaParticipantes">
-                    <!-- Será preenchido via JS -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Relatório -->
     <div id="relatorioModal" class="modal">
         <div class="modal-content pequeno">
             <div class="modal-header">
@@ -85,12 +79,10 @@
                 <span class="close">&times;</span>
             </div>
             <div class="modal-body" id="relatorioBody">
-                <!-- Conteúdo do relatório -->
             </div>
         </div>
     </div>
 
-    <!-- Modal Confirmação Reiniciar -->
     <div id="confirmarModal" class="modal">
         <div class="modal-content mini">
             <div class="modal-header">
