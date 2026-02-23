@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio - VIC Distribuidora</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="VIC Distribuidora" class="logo">
+        </div>
+        
+        <div class="painel-controle">
+            <div class="secao participantes" id="secaoParticipantes">
+                <div class="secao-header">
+                    <h2>👥 Participantes</h2>
+                    <button id="gerenciarBtn" class="btn-pequeno">Gerenciar</button>
+                </div>
+                <div class="lista-resumo" id="participantesResumo">
+                    <!-- Será preenchido via JS -->
+                </div>
+            </div>
+
+            <div class="secao sorteio">
+                <div class="sorteio-displays">
+                    <div class="display-item">
+                        <span class="display-label">Funcionário</span>
+                        <div class="display" id="funcionarioDisplay">---</div>
+                    </div>
+                    <div class="display-item">
+                        <span class="display-label">Produto</span>
+                        <div class="display" id="produtoDisplay">---</div>
+                    </div>
+                </div>
+                
+                <div class="contadores">
+                    <span id="funcionariosRestantes">10</span> participantes |
+                    <span id="produtosRestantes">12</span> produtos
+                </div>
+
+                <div class="acoes">
+                    <button id="sortearBtn" class="btn-principal">🎰 Sortear</button>
+                    <button id="relatorioBtn" class="btn-secundario" style="display: none;">📋 Relatório</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reiniciar-container" id="reiniciarContainer" style="display: none;">
+            <button id="reiniciarBtn" class="btn-reiniciar">↻ Reiniciar Sorteio</button>
+        </div>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+    <div id="participantesModal" class="modal">
+        <div class="modal-content pequeno">
+            <div class="modal-header">
+                <h2>Gerenciar Participantes</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="filtros">
+                    <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+                    <button class="filtro-btn" data-filtro="presentes">Presentes</button>
+                    <button class="filtro-btn" data-filtro="ausentes">Ausentes</button>
+                </div>
+                <div class="lista-participantes" id="listaParticipantes">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="relatorioModal" class="modal">
+        <div class="modal-content pequeno">
+            <div class="modal-header">
+                <h2>📋 Relatório</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="relatorioBody">
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmarModal" class="modal">
+        <div class="modal-content mini">
+            <div class="modal-header">
+                <h2>⚠️ Confirmar</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body confirmar-body">
+                <p>Tem certeza que deseja reiniciar o sorteio?</p>
+                <p class="confirmar-sub">Todo o progresso será perdido.</p>
+                <div class="confirmar-acoes">
+                    <button id="confirmarSim" class="btn-confirmar sim">Sim</button>
+                    <button id="confirmarNao" class="btn-confirmar nao">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
