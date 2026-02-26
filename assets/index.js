@@ -1,12 +1,147 @@
 const funcionariosOriginais = [
-    "João Silva", "Maria Santos", "Pedro Oliveira", "Ana Souza", "Carlos Lima",
-    "Juliana Costa", "Roberto Alves", "Fernanda Rodrigues", "Lucas Mendes", "Patrícia Nunes"
+  "ADEMAR",
+  "ALEXANDRE DONARIO",
+  "ANDERSON RODRIGO",
+  "ANDERSON VERPLOTZ",
+  "BRUNO",
+  "CARLOS FELIPE",
+  "DIEGO",
+  "DIRCEU",
+  "FABIO",
+  "FELIPE",
+  "GABRIEL",
+  "JEFFERSON",
+  "JORGE",
+  "JONATHAS",
+  "JONNY",
+  "MAICON",
+  "MARCOS",
+  "MARLON",
+  "MATHEUS",
+  "TIAGO BORGES",
+  "WELINTON",
+  "WILLIAM MONTEIRO",
+  "AIRTON",
+  "ALESSANDRO",
+  "CLEBER",
+  "DANIEL",
+  "FERNANDO",
+  "IVAN ALEMAO",
+  "JOAO CARLOS - JC",
+  "JOAO VITOR",
+  "JOSE",
+  "MAZOTTO",
+  "MOISES",
+  "SIDNEI",
+  "TIAGO EDUARDO",
+  "ALEXANDRE CATAFESTA",
+  "CALEBE ESTAGIARIO",
+  "LOIA",
+  "VALLERIA",
+  "ELISANGELA",
+  "FERNANDA",
+  "LUCIANE",
+  "MESSERA",
+  "RAFAELLA CRISTINA",
+  "TAMARA",
+  "YURI",
+  "WILLIAN SCHMITZ",
+  "ODAIR",
+  "EVANDRO",
+  "JULIANO",
+  "CHALYTON",
+  "JOSE",
+  "RAFAEL",
+  "GUILHERME",
+  "RAFAELA PROF",
+  "TAIS EMPREGADA",
+  "ANDERSON ELETRICA",
+  "LEO ELETRICA",
+  "MONSTRO",
+  "JEAN"
 ];
 
 const produtosOriginais = [
-    "Smartphone X", "Notebook Pro", "Tablet 10", "Fone Bluetooth", "Smart TV 50",
-    "Console Game", "Câmera Digital", "Relógio Smart", "Caixa de Som", "Mouse Gamer",
-    "Teclado Mecânico", "Monitor 24"
+  "ASPIRADOR",
+  "ASPIRADOR",
+
+  "CAFETEIRA",
+
+  "CAIXA DE SOM (RETIRAR NA SEGUNDA-FEIRA)",
+  "CAIXA DE SOM (RETIRAR NA SEGUNDA-FEIRA)",
+
+  "CELULAR MOTO G",
+
+  "CHURRASQUEIRA ELETRICA",
+  "CHURRASQUEIRA ELETRICA",
+  "CHURRASQUEIRA ELETRICA",
+  "CHURRASQUEIRA ELETRICA",
+
+  "COBRELEITO KING",
+
+  "ESMERILHADEIRA ANGULAR",
+
+  "FRITADEIRA ELETRICA (AIR FRYER)",
+  "FRITADEIRA ELETRICA",
+  "FRITADEIRA ELETRICA",
+  "FRITADEIRA ELETRICA",
+  "FRITADEIRA ELETRICA",
+  "FRITADEIRA ELETRICA",
+  "FRITADEIRA ELETRICA",
+
+  "FURADEIRA ELETRICA",
+  "FURADEIRA ELETRICA",
+
+  "GELADEIRA",
+
+  "GRILL ELETRICO",
+  "GRILL ELETRICO",
+  "GRILL ELETRICO",
+
+  "KIT DE FERRAMENTAS BASICAS",
+  "KIT DE FERRAMENTAS BASICAS",
+
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+  "LIQUIDIFICADOR",
+
+  "PANELA DE PRESSÃO",
+  "PANELA DE PRESSÃO",
+
+  "PARAFUSADEIRA ELETRICA",
+  "PARAFUSADEIRA ELETRICA",
+
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+  "SANDUICHEIRA",
+
+  "SERRA TICO-TICO",
+
+  "SOPRADOR TERMICO",
+  "SOPRADOR TERMICO",
+
+  "TV 32",
+  "TV 32",
+  "TV 32",
+  "TV 32",
+
+  "TV 42",
+
+  "VENTILADOR",
+  "VENTILADOR"
 ];
 
 let participantes = funcionariosOriginais.map(nome => ({ nome, presente: true }));
